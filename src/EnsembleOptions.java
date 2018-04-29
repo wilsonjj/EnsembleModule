@@ -6,7 +6,7 @@ import moa.classifiers.Classifier;
 class EnsembleOptions {
     private static ArrayList <Classifier> classifiers = new ArrayList<>();
     private Classifier currentSelected;
-    private int ensembleSize = 20;
+    private int ensembleSize = 40;
     EnsembleOptions(){
         classifiers.add(new moa.classifiers.trees.HoeffdingAdaptiveTree());
         classifiers.add(new moa.classifiers.bayes.NaiveBayes());

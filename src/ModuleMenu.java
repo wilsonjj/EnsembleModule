@@ -253,7 +253,6 @@ public class ModuleMenu {
     private double getPredictionClass(Prediction prediction){
         double[] instanceConfidence= prediction.getVotes(); //creates an array to store results of the model
         double predictedLabel= 0;
-
         double highest = instanceConfidence[0];
         for(int i=0; i<instanceConfidence.length;i++){
             if(instanceConfidence[i]>highest){
